@@ -95,6 +95,8 @@ std_msgs/Empty.h
 -
 std_msgs/String.h
 -
+string
+-
 swiftpro/SwiftproState.h
 -
 swiftpro/angle4th.h
@@ -104,8 +106,6 @@ swiftpro/gcode.h
 swiftpro/position.h
 -
 swiftpro/status.h
--
-string
 -
 fstream
 -

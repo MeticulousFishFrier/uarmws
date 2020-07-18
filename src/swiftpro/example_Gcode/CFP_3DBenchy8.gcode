@@ -62256,8 +62256,8 @@ M84
 M104 S0
 ;End of Gcode
 ;SETTING_3 {"global_quality": "[general]\\nversion = 2\\nname = uarmswiftpro\\nd
-;SETTING_3 efinition = custom\\n\\n[metadata]\\nquality_type = normal\\ntype = q
-;SETTING_3 uality_changes\\n\\n[values]\\nadhesion_type = raft\\ninfill_sparse_d
+;SETTING_3 efinition = custom\\n\\n[metadata]\\ntype = quality_changes\\nquality
+;SETTING_3 _type = normal\\n\\n[values]\\nadhesion_type = raft\\ninfill_sparse_d
 ;SETTING_3 ensity = 10\\nlayer_height = 0.3\\nmaterial_diameter = 1.75\\nmateria
 ;SETTING_3 l_print_temperature = 200\\nspeed_print = 4\\nspeed_travel = 4\\ntop_
 ;SETTING_3 bottom_thickness = 0.6\\nwall_thickness = 0.6\\n\\n"}
