@@ -3,10 +3,7 @@
 ;Filament used: 2.91069m
 ;Layer height: 0.3
 ;Generated with Cura_SteamEngine 2.4.0
-M106 S255
-G0 Z-1
-M2410
-G0 Z0
+M106
 
 M104 S200
 M109 S200

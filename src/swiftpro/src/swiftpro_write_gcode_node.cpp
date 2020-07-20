@@ -27,18 +27,19 @@ y______uarm swift pro front______
 
 */
 const std::string GCODE_FILE_PATH =
-    "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/example_Gcode/U_3DBenchy12.gcode";
+    "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/"
+    "example_Gcode/U_3DBenchy12.gcode";
 
 serial::Serial _serial; // serial object
 swiftpro::SwiftproState arm_state;
 
-const float zeroPt[] = {151.55, 53.18, 0};
-// G0 X151.55 Y53.18 Z0.00
+const float zeroPt[] = {150, 43, 0};
+// G0 X150 Y43 Z0.00
 
 void offset_pos_gcode(std::string &str) {
   // only offset if its x and y we have to rearange
   if ((str.substr(0, 2) == "G1" || str.substr(0, 2) == "G0") &&
-      str.at(3) == 'X') {
+      str.find('X') != -1) {
     int xStr[2], yStr[2];
 
     for (int i(0); i < str.length(); ++i) {
@@ -62,7 +63,7 @@ void offset_pos_gcode(std::string &str) {
     float xPos, yPos;
     // swich the x and y and apply offset
     xPos = std::stof(str.substr(yStr[0], yStr[1])) + zeroPt[0];
-    yPos = std::stof(str.substr(xStr[0], xStr[1])) - zeroPt[1];
+    yPos = zeroPt[1]- std::stof(str.substr(xStr[0], xStr[1]));
     // std::cout<<xPos<<std::endl;
     // std::cout<<yPos<<std::endl;
     str = str.substr(0, xStr[0]) + std::to_string(xPos) + " Y" +
@@ -120,17 +121,11 @@ int main(int argc, char **argv) {
     _serial.write("M2120 V0\r\n"); // stop report position
     ros::Duration(0.1).sleep();    // wait 0.1s
     _serial.write("M17\r\n");      // attach
-    ros::Duration(0.1).sleep();    // wait 0.1s
-    _serial.write("M2400 S2\r\n"); // set to 3d print mode
-    ros::Duration(0.1).sleep();    // wait 1s
+    ros::Duration(1).sleep();      // wait 0.1s
 
-    // Go to home
-    _serial.write("G0 X" + std::to_string(zeroPt[0]) + " Y" +
-                  std::to_string(zeroPt[1]) + " Z0\r\n"); // move to zero point
-    ros::Duration(0.1).sleep();
     ROS_INFO_STREAM("Waiting for commands");
   }
-  ros::Duration(5).sleep(); // wait 1s
+  ros::Duration(3).sleep(); // wait 3s
 
   std_msgs::String result;
 
@@ -141,6 +136,11 @@ int main(int argc, char **argv) {
     ros::Duration(1).sleep(); // wait 1s
   }
 
+  // Go to home
+  _serial.write("G0 X" + std::to_string(zeroPt[0]) + " Y" +
+                std::to_string(zeroPt[1]) + " Z0.3\r\n"); // move to zero point
+  ros::Duration(3).sleep();
+
   // open gcode file to be read
   std::ifstream gcode_file(GCODE_FILE_PATH);
   std::string gcode_str;
@@ -149,33 +149,29 @@ int main(int argc, char **argv) {
       nh.advertise<swiftpro::SwiftproState>("SwiftproState_topic", 1);
   ros::Rate loop_rate(20);
 
-  // writes the first lines of gcode to get things going
-  for(int i = 0 ; i<5; ++i){
-    write_gcode_ln(gcode_file);  
-  }
-
   ROS_INFO("entering while loop");
   while (ros::ok()) {
     // result.data = _serial.read(_serial.available());
     // ROS_INFO("read: %s", result.data.c_str());
+    // only operate if there are things in the buffer
     if (_serial.available()) {
-      std::string response = _serial.readline(_serial.available());
+      std::string response = _serial.readline();
       ROS_INFO("read: %s", response.c_str());
+      ROS_INFO("read: %zu", response.size());
 
       // only send data if previous command has been completed
       // this is how octoprint does it, might need to put some
       // more into buffers
-      ROS_INFO("boolean %d", response == "ok\n");
+      ROS_INFO("boolean %d", response.substr(0,2) == "ok");
 
-      if (response.substr(0,2) == "ok") {
+      if (response.substr(0,2) == "ok" ) {
         ROS_INFO("writing gcode again");
 
         write_gcode_ln(gcode_file);
         pub.publish(arm_state);
-      }
-      else if(response.substr(0,17) == "ok E22 unreachable"){
-          ROS_INFO("ERROR, Unreachable Position");
-          return 1;
+      } else if (response.substr(0, 18) == "ok E22 unreachable ") {
+        ROS_INFO("ERROR, Unreachable Position");
+        return 1;
       }
       result.data.clear();
 
