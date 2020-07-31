@@ -27,15 +27,15 @@ y______uarm swift pro front______
 
 */
 const std::string GCODE_FILE_PATH =
-    "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/"
-    "example_Gcode/U_3DBenchy12.gcode";
+    "/home/xueyelin/Thermite_Boom_Boom/Code/Examples/test2.gcode";
 
 serial::Serial _serial; // serial object
 swiftpro::SwiftproState arm_state;
 
-const float zeroPt[] = {150, 43, 0};
-// G0 X150 Y43 Z0.00
+//const float zeroPt[] = {150, 43, 0};
+const float zeroPt[] = {133.5, 48.5, 0};
 
+// G0 X133.5 Y48.5 Z0
 void offset_pos_gcode(std::string &str) {
   // only offset if its x and y we have to rearange
   if ((str.substr(0, 2) == "G1" || str.substr(0, 2) == "G0") &&
@@ -139,7 +139,10 @@ int main(int argc, char **argv) {
   // Go to home
   _serial.write("G0 X" + std::to_string(zeroPt[0]) + " Y" +
                 std::to_string(zeroPt[1]) + " Z0.3\r\n"); // move to zero point
-  ros::Duration(3).sleep();
+  ros::Duration(5).sleep();
+
+  //move up 10 mm
+  _serial.write("G0 Z10\r\n"); // move to zero point
 
   // open gcode file to be read
   std::ifstream gcode_file(GCODE_FILE_PATH);
@@ -148,6 +151,22 @@ int main(int argc, char **argv) {
   ros::Publisher pub =
       nh.advertise<swiftpro::SwiftproState>("SwiftproState_topic", 1);
   ros::Rate loop_rate(20);
+
+
+  //load the buffer
+  for(size_t i = 0; i < 7; ++i){
+    write_gcode_ln(gcode_file);
+  }
+
+    // dump the intitial data stream and issue first command
+  if (_serial.available()) {
+    result.data = _serial.read(_serial.available());
+    ROS_INFO("read 2: %s", result.data.c_str());
+    ros::Duration(1).sleep(); // wait 1s
+  }
+
+  write_gcode_ln(gcode_file);
+
 
   ROS_INFO("entering while loop");
   while (ros::ok()) {

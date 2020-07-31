@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/gtest/cmake_install.cmake")
   include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/beginner_tutorials/cmake_install.cmake")
+  include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/node_example/cmake_install.cmake")
   include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro/cmake_install.cmake")
   include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/pro_moveit_config/cmake_install.cmake")
   include("/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swift_moveit_config/cmake_install.cmake")

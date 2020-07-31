@@ -10,9 +10,9 @@
 ;MAXZ:48
 ;Generated with Cura_SteamEngine 4.6.1
 M106 ;Turn on Fan
-M104 S200
+M104 S205
 M105
-M109 S200
+M109 S205
 M82 ;absolute extrusion mode
 G92 E0
 G1 F200 E3

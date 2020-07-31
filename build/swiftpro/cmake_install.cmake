@@ -43,7 +43,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/position.msg"
     "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/angle4th.msg"
     "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/status.msg"
-    "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/gcode.msg"
     )
 endif()
 
@@ -92,5 +91,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/swiftpro" TYPE FILE FILES "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/swiftpro" TYPE PROGRAM FILES "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/scripts/hello.py")
 endif()
 

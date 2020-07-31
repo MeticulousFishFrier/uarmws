@@ -1,0 +1,8 @@
+prefix=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/install
+
+Name: node_example
+Description: Description of node_example
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure message_runtime roscpp rosgraph_msgs rospy std_msgs

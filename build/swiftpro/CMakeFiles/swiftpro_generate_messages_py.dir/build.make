@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build
 # Include the progress variables for this target.
 include swiftpro/CMakeFiles/swiftpro_generate_messages_py.dir/progress.make
 
-swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py
 swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py
 swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py
 swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py
@@ -61,42 +60,35 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_
 swiftpro/CMakeFiles/swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py
 
 
-/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/gcode.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG swiftpro/gcode"
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/gcode.msg -Iswiftpro:/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg
-
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/SwiftproState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG swiftpro/SwiftproState"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG swiftpro/SwiftproState"
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/SwiftproState.msg -Iswiftpro:/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg
 
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/position.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG swiftpro/position"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG swiftpro/position"
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/position.msg -Iswiftpro:/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg
 
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/status.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG swiftpro/status"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG swiftpro/status"
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/status.msg -Iswiftpro:/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg
 
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_angle4th.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_angle4th.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/angle4th.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG swiftpro/angle4th"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG swiftpro/angle4th"
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg/angle4th.msg -Iswiftpro:/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg
 
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py
 /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/__init__.py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_angle4th.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for swiftpro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for swiftpro"
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg --initpy
 
 swiftpro_generate_messages_py: swiftpro/CMakeFiles/swiftpro_generate_messages_py
-swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py
 swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py
 swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py
 swiftpro_generate_messages_py: /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py

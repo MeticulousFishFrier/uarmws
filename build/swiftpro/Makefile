@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/rule:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/rule
+.PHONY : swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/rule
+
+# Convenience name for target.
+swiftpro_3dprint_node: swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/rule
+
+.PHONY : swiftpro_3dprint_node
+
+# fast build rule for target.
+swiftpro_3dprint_node/fast:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/build.make swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/build
+.PHONY : swiftpro_3dprint_node/fast
+
+# Convenience name for target.
 swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/rule:
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/rule
 .PHONY : swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/rule
@@ -301,21 +316,6 @@ swiftpro_geneus: swiftpro/CMakeFiles/swiftpro_geneus.dir/rule
 swiftpro_geneus/fast:
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_geneus.dir/build.make swiftpro/CMakeFiles/swiftpro_geneus.dir/build
 .PHONY : swiftpro_geneus/fast
-
-# Convenience name for target.
-swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
-.PHONY : swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-swiftpro_generate_messages_cpp: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
-
-.PHONY : swiftpro_generate_messages_cpp
-
-# fast build rule for target.
-swiftpro_generate_messages_cpp/fast:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/build.make swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/build
-.PHONY : swiftpro_generate_messages_cpp/fast
 
 # Convenience name for target.
 swiftpro/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
@@ -633,6 +633,36 @@ actionlib_generate_messages_eus/fast:
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
+swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
+.PHONY : swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
+
+# Convenience name for target.
+swiftpro_gencpp: swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
+
+.PHONY : swiftpro_gencpp
+
+# fast build rule for target.
+swiftpro_gencpp/fast:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_gencpp.dir/build.make swiftpro/CMakeFiles/swiftpro_gencpp.dir/build
+.PHONY : swiftpro_gencpp/fast
+
+# Convenience name for target.
+swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/build.make swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
 swiftpro/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : swiftpro/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
@@ -843,51 +873,6 @@ swiftpro_generate_messages/fast:
 .PHONY : swiftpro_generate_messages/fast
 
 # Convenience name for target.
-swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
-.PHONY : swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
-
-# Convenience name for target.
-swiftpro_gencpp: swiftpro/CMakeFiles/swiftpro_gencpp.dir/rule
-
-.PHONY : swiftpro_gencpp
-
-# fast build rule for target.
-swiftpro_gencpp/fast:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_gencpp.dir/build.make swiftpro/CMakeFiles/swiftpro_gencpp.dir/build
-.PHONY : swiftpro_gencpp/fast
-
-# Convenience name for target.
-swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-.PHONY : swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_nodejs: swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/build.make swiftpro/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-# Convenience name for target.
-swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/rule:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/rule
-.PHONY : swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/rule
-
-# Convenience name for target.
-_swiftpro_generate_messages_check_deps_gcode: swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/rule
-
-.PHONY : _swiftpro_generate_messages_check_deps_gcode
-
-# fast build rule for target.
-_swiftpro_generate_messages_check_deps_gcode/fast:
-	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/build.make swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_gcode.dir/build
-.PHONY : _swiftpro_generate_messages_check_deps_gcode/fast
-
-# Convenience name for target.
 swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_status.dir/rule:
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_status.dir/rule
 .PHONY : swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_status.dir/rule
@@ -946,6 +931,48 @@ _swiftpro_generate_messages_check_deps_angle4th: swiftpro/CMakeFiles/_swiftpro_g
 _swiftpro_generate_messages_check_deps_angle4th/fast:
 	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_angle4th.dir/build.make swiftpro/CMakeFiles/_swiftpro_generate_messages_check_deps_angle4th.dir/build
 .PHONY : _swiftpro_generate_messages_check_deps_angle4th/fast
+
+# Convenience name for target.
+swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
+.PHONY : swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+swiftpro_generate_messages_cpp: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/rule
+
+.PHONY : swiftpro_generate_messages_cpp
+
+# fast build rule for target.
+swiftpro_generate_messages_cpp/fast:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/build.make swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/build
+.PHONY : swiftpro_generate_messages_cpp/fast
+
+src/swiftpro_3dprint_node.o: src/swiftpro_3dprint_node.cpp.o
+
+.PHONY : src/swiftpro_3dprint_node.o
+
+# target to build an object file
+src/swiftpro_3dprint_node.cpp.o:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/build.make swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/src/swiftpro_3dprint_node.cpp.o
+.PHONY : src/swiftpro_3dprint_node.cpp.o
+
+src/swiftpro_3dprint_node.i: src/swiftpro_3dprint_node.cpp.i
+
+.PHONY : src/swiftpro_3dprint_node.i
+
+# target to preprocess a source file
+src/swiftpro_3dprint_node.cpp.i:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/build.make swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/src/swiftpro_3dprint_node.cpp.i
+.PHONY : src/swiftpro_3dprint_node.cpp.i
+
+src/swiftpro_3dprint_node.s: src/swiftpro_3dprint_node.cpp.s
+
+.PHONY : src/swiftpro_3dprint_node.s
+
+# target to generate assembly for a file
+src/swiftpro_3dprint_node.cpp.s:
+	cd /home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build && $(MAKE) -f swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/build.make swiftpro/CMakeFiles/swiftpro_3dprint_node.dir/src/swiftpro_3dprint_node.cpp.s
+.PHONY : src/swiftpro_3dprint_node.cpp.s
 
 src/swiftpro_moveit_node.o: src/swiftpro_moveit_node.cpp.o
 
@@ -1117,6 +1144,7 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... edit_cache"
+	@echo "... swiftpro_3dprint_node"
 	@echo "... swiftpro_read_gcode_node"
 	@echo "... swiftpro_write_gcode_node"
 	@echo "... swiftpro_read_node"
@@ -1127,7 +1155,6 @@ help:
 	@echo "... swiftpro_gennodejs"
 	@echo "... swiftpro_generate_messages_nodejs"
 	@echo "... swiftpro_geneus"
-	@echo "... swiftpro_generate_messages_cpp"
 	@echo "... install/local"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
@@ -1150,6 +1177,8 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_eus"
+	@echo "... swiftpro_gencpp"
+	@echo "... tf_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... test"
@@ -1166,14 +1195,15 @@ help:
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... swiftpro_generate_messages"
-	@echo "... swiftpro_gencpp"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... _swiftpro_generate_messages_check_deps_gcode"
 	@echo "... _swiftpro_generate_messages_check_deps_status"
 	@echo "... rebuild_cache"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... _swiftpro_generate_messages_check_deps_angle4th"
+	@echo "... swiftpro_generate_messages_cpp"
+	@echo "... src/swiftpro_3dprint_node.o"
+	@echo "... src/swiftpro_3dprint_node.i"
+	@echo "... src/swiftpro_3dprint_node.s"
 	@echo "... src/swiftpro_moveit_node.o"
 	@echo "... src/swiftpro_moveit_node.i"
 	@echo "... src/swiftpro_moveit_node.s"

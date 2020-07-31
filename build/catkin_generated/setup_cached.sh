@@ -7,8 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib:$LD_LIBRARY_PATH"
+export PATH="/opt/ros/melodic/bin:/home/xueyelin/perl5/bin:/home/xueyelin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PWD="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages"

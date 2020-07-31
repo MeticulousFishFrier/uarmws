@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/swiftpro_generate_messages_py"
-  "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_gcode.py"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_SwiftproState.py"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_position.py"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/lib/python2.7/dist-packages/swiftpro/msg/_status.py"

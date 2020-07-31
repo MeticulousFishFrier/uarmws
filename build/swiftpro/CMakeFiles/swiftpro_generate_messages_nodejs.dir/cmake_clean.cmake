@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/swiftpro_generate_messages_nodejs"
-  "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/share/gennodejs/ros/swiftpro/msg/SwiftproState.js"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/share/gennodejs/ros/swiftpro/msg/position.js"
   "/home/xueyelin/Thermite_Boom_Boom/Code/ROS/uarmws/devel/share/gennodejs/ros/swiftpro/msg/status.js"
