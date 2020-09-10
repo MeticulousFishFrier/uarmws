@@ -28,7 +28,7 @@ def callback(message):
     print("trying gcode sender")
     print(gcodeFileName)
     # or p.printcore('COM3',115200) on Windows
-    p = printcore('/dev/ttyACM0', 115200)
+    p = printcore('/dev/ttyACM1', 115200)
 
     # Sleeps for 1 sec t o allow for UArm's serial jiberish
     # or pass in your own array of gcode lines instead of reading from a file
